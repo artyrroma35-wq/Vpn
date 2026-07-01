@@ -1,0 +1,3 @@
+-keep class libxray.** { *; }
+-keep class com.quattro.vpn.** { *; }
+-dontwarn libxray.**
