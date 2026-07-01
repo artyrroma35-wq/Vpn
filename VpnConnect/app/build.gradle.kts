@@ -62,9 +62,8 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
 
-    // Xray-core for Android - libxray
-    // https://github.com/2dust/libxray
-    implementation("com.github.2dust:libxray:25.5.16")
+    // Xray-core for Android - libv2ray.aar скачивается в CI из релизов AndroidLibXrayLite
+    implementation(files("libs/libv2ray.aar"))
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
