@@ -18,6 +18,13 @@ jobs:
         uses: android-actions/setup-android@v3
       - name: Install required SDK platform & build-tools
         run: sdkmanager --install "platforms;android-36" "build-tools;36.0.0"
+      - name: Download libv2ray.aar
+        uses: robinraju/release-downloader@v1.12
+        with:
+          repository: '2dust/AndroidLibXrayLite'
+          latest: true
+          fileName: 'libv2ray.aar'
+          out-file-path: VpnConnect/app/libs
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
